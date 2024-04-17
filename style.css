@@ -22,6 +22,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    z-index: 10;
 }
 
 nav .logo-area {
@@ -67,10 +69,11 @@ nav .logo-area {
     width: 1000px;
     height: 1000px;
     position: absolute;
-    background-color: #ccc;
     border-radius: 50%;
     top: 0;
     left: 0;
+    transform: rotate(0deg);
+    transition: 1s;
 }
 
 .future {
@@ -94,16 +97,20 @@ nav .logo-area {
 .two {
     top: 100px;
     left: 340px;
+    transform: rotate(-90deg);
 }
 
 .three {
     left: 50px;
     bottom: 450px;
+    transform: rotate(-180deg);
 }
 
 .four {
     bottom: 150px;
     right: 340px;
+    transform: rotate(-270deg);
+
 }
 
 .pc {
@@ -112,6 +119,7 @@ nav .logo-area {
     top: 50%;
     transform: translateY(-50%);
     left: 27%;
+    z-index: 1;
 }
 
 .control {
@@ -131,7 +139,26 @@ nav .logo-area {
 
 #upBtn {
     cursor: pointer;
+    transition: .5s;
+}
+#upBtn:hover {
+    opacity: 0.7;
 }
 #downBtn {
     transform: rotate(-180deg);
+}
+#downBtn:hover {
+    opacity: 0.7;
+    transition: .5s;
+
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 520px solid #fff;
+    border-right: 520px solid transparent;
+    border-bottom: 520px solid #fff;
+    border-left: 520px solid #fff;
 }
