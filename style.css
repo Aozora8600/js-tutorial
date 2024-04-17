@@ -12,7 +12,7 @@
     background: linear-gradient(to right,#4dc1ff,#eb77f6);
     overflow: hidden;
     font-family: "Ubuntu", sans-serif;
-
+    position: relative;
 }
 
 /* header */
@@ -54,3 +54,62 @@ nav .logo-area {
 }
 
 /* content */
+.info {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.future {
+    display: flex;
+    position: absolute;
+    color: #fff;
+}
+.future img {
+    width: 70px;
+}
+
+.future .text-area {
+    margin-left: 20px;
+}
+
+.one {
+    
+    top: 450px;
+    right: 70px;
+}
+.two {
+    top: 100px;
+    left: 340px;
+}
+
+.three {
+    left: 50px;
+    bottom: 450px;
+}
+
+.four {
+    bottom: 150px;
+    right: 340px;
+}
+
+.pc {
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 27%;
+}
