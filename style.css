@@ -113,3 +113,25 @@ nav .logo-area {
     transform: translateY(-50%);
     left: 27%;
 }
+
+.control {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.control img {
+    width: 15%;
+}
+.control h3 {
+    color: #fff;
+    margin: 20px 0;
+}
+
+#upBtn {
+    cursor: pointer;
+}
+#downBtn {
+    transform: rotate(-180deg);
+}
